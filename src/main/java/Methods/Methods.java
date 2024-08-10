@@ -1,3 +1,5 @@
+package Methods;
+
 import java.util.Scanner;
 
 public class Methods {
@@ -6,9 +8,9 @@ public class Methods {
     }
     static double sum(){
         Scanner sc =new Scanner(System.in);
-        System.out.println("Enter number 1: ");
+        System.out.print("Enter number 1: ");
         double num1=sc.nextDouble();
-        System.out.println("Enter number 2: ");
+        System.out.print("Enter number 2: ");
         double num2=sc.nextDouble();
         return num1+num2;
     }
