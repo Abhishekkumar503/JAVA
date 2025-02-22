@@ -4,7 +4,7 @@ public class FindElementInInfiniteArray {
     // in this we are reverse the Binary search
     // https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/?ref=gcse_ind
     public static void main(String[] args) {
-        int arr[] = new int[]{3, 5, 7, 9, 10, 90, 100, 130, 140, 160, 170};
+        int arr[] = new int[]{3, 5, 7, 9, 10, 90, 100, 130, 140, 160, 170,180,200};
         System.out.println(ans(arr,10));
     }
     static int ans(int[] arr , int target)

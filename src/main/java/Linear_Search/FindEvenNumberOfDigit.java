@@ -2,7 +2,7 @@ package Linear_Search;
 
 public class FindEvenNumberOfDigit {
     public static void main(String[] args) {
-        int[] nums = {12,345,2,61,7896} ;
+        int[] nums = {12,345,2,61,7896,232332,534646423} ;
         System.out.println(findNumbers(nums));
     }
 
