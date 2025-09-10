@@ -1,3 +1,5 @@
+package LeetCode.Array.Medium.ReverseInteger_7;
+
 public class ReverseSolution {
     public int reverse(int x) {
         int INT_MAX = Integer.MAX_VALUE;
