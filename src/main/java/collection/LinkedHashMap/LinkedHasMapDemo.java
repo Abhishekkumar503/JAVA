@@ -24,6 +24,21 @@ public class LinkedHasMapDemo {
 		linkedHashMap.put("Sandesh",3);
 		
 		System.out.println(linkedHashMap);
+		
+		
+		HashMap<String, Integer> Hashmap = new HashMap<>();
+		LinkedHashMap<String ,Integer> linkedHash =  new LinkedHashMap<>(Hashmap);
+		
+		Hashmap.put("Abhishek",1);
+		Hashmap.put("Udai",2);
+		Hashmap.put("Sandesh",3);
+		
+		
+		Hashmap.putIfAbsent("Archit",4);
+		Hashmap.getOrDefault("Abhishek", 1);
+		
+		System.out.println(linkedHash);
+		
 	}
 	
 
