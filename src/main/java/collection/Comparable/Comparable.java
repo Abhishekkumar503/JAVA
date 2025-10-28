@@ -1,6 +1,8 @@
 package collection.Comparable;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 import CommonClass.Student;
@@ -19,7 +21,7 @@ public class Comparable {
 		student.add(new Student ("Ram",6.8));
 		student.add(new Student ("Anurag",6.2));
 		
-//		student.sort();
+		Collections.sort(null);
 		
 		System.out.println(student);
 	}

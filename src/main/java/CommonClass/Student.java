@@ -2,7 +2,7 @@ package CommonClass;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
 
 	private String name;
 	private double cgpa;
@@ -42,7 +42,11 @@ public class Student {
 		this.name = name;
 		this.cgpa = cgpa;
 	}
-	
+	@Override
+	public int compareTo(Student o1) {
+		// TODO Auto-generated method stub
+		return Double.compare(o1.getCgpa(), this.getCgpa());
+	}
 	
 	
 }
