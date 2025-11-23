@@ -17,7 +17,6 @@ public class ReverseADigitsOfNumber {
 	private static int reverseADigit(int num) {
 		// TODO Auto-generated method stub
 		int reverse = 0 , digi = 0;
-		
 	while ( num > 0)
 	{
 		digi = num % 10;
