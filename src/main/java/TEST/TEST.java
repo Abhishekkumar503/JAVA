@@ -9,7 +9,7 @@ public class TEST {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		int[] digits = {1,2,3};
+		int[] digits = {1,2,3};
 //		
 //		int ans = 0 , len = digits.length -1 , k;
 //        for(int n : digits)
@@ -33,33 +33,52 @@ public class TEST {
 //        }
 //        System.out.println(set.stream().limit(3).collect(Collectors.toList()).reversed().get(set.size()-1));
 //        
-		int[] nums = {1,0,1,1,0,1};
-		System.out.println(findMaxConsecutiveOnes(nums));
-        
+//		int[] nums = {1,0,1,1,0,1};
+//		System.out.println(findMaxConsecutiveOnes(nums));
+//        
+//	}
+//	public static int findMaxConsecutiveOnes(int[] nums) {
+//      
+//		int count = 0 , c=0;
+//        for(int i = 0 ; i <  nums.length ; i++)
+//        {
+//        if(nums[i] == 1)
+//        count++;
+//        else if(nums[nums.length-1] == 1)
+//        {
+//        nums[i] = count+1;
+//       
+//        }
+//        else
+//        {
+//        nums[i] = count;
+//        count = 0;
+//        }
+//        }
+//        for(int n : nums)
+//        System.out.println(n);
+//        System.out.println();
+//        return Arrays.stream(nums).max().getAsInt();
+//
+//    }
+		
+		
+	System.out.println(minOperations(digits));
 	}
-	public static int findMaxConsecutiveOnes(int[] nums) {
-        int count = 0 , c=0;
-        for(int i = 0 ; i <  nums.length ; i++)
-        {
-        if(nums[i] == 1)
-        count++;
-        else if(nums[nums.length-1] == 1)
-        {
-        nums[i] = count+1;
-       
-        }
-        else
-        {
-        nums[i] = count;
-        count = 0;
-        }
-        }
-        for(int n : nums)
-        System.out.println(n);
-        System.out.println();
-        return Arrays.stream(nums).max().getAsInt();
-
-    }
 	
+public static int minOperations(int[] nums) {
+int count = 0;
+	HashSet<Integer> set = new HashSet<>();
+	for(int n : nums)
+	{
+		if(!set.add(n))
+		{
+			count++;
+		}
+		
+	}
+	return count;
+        
+    }
 
 }
