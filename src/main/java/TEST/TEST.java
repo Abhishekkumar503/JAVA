@@ -1,7 +1,9 @@
 package TEST;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -64,7 +66,12 @@ public class TEST {
 		
 		
 	System.out.println(minOperations(digits));
+	
+	System.out.println(reversePrefix("abcd",2));
 	}
+	
+
+
 	
 public static int minOperations(int[] nums) {
 int count = 0;
@@ -80,5 +87,37 @@ int count = 0;
 	return count;
         
     }
+
+public static String reversePrefix(String s, int k) {
+    char[] str = s.toCharArray();
+
+    if (k == s.length()) {
+        reverse(str);
+    } else {
+        int start = 0;
+        int end = k - 1;
+        while (start < end) {
+            char temp = str[start];
+            str[start] = str[end];
+            str[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+    return new String(str);
+}
+
+public static void reverse(char[] arr) {
+    int start = 0;
+    int end = arr.length - 1;
+    while (start < end) {
+        char temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+}
 
 }
